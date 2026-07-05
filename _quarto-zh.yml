@@ -6,7 +6,7 @@ project:
 lang: zh
 
 website:
-  site-url: "https://volmerso.github.io/zh"
+  site-url: "https://volmerso.github.io/merso3/zh"
   description: "個人學術網站"
 
   navbar:
@@ -42,7 +42,7 @@ website:
 
     right:
       - text: "EN"             # ← 語言切換按鈕：跳回英文版
-        href: https://volmerso.github.io/
+        href: https://musicres1.github.io/merso3/
       - text: 履歷
         href: files/nsf-biosketch.pdf
       - icon: github
