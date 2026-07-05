@@ -42,7 +42,7 @@ website:
 
     right:
       - text: "中文"           # ← 語言切換按鈕：跳到中文版
-        href: https://volmerso.github.io/zh/
+        href: https://musicres1.github.io/merso3/zh/
       - text: CV
         href: files/nsf-biosketch.pdf
       - icon: github
