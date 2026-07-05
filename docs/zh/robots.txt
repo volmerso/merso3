@@ -1,1 +1,1 @@
-Sitemap: https://volmerso.github.io/zh/sitemap.xml
+Sitemap: https://volmerso.github.io/merso3/zh/sitemap.xml
