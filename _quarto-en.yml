@@ -42,11 +42,11 @@ website:
 
     right:
       - text: "中文"           # ← 語言切換按鈕：跳到中文版
-        href: https://musicres1.github.io/merso3/zh/
+        href: https://volmerso.github.io/merso3/zh/
       - text: CV
         href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://github.com/volmerso/volmerso.github.io
+        href: https://github.com/volmerso/merso3
         target: _blank
       - icon: rss
         href: posts.xml
@@ -57,7 +57,7 @@ website:
     center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)"
     right:
       - icon: github
-        href: https://github.com/volmerso/volmerso.github.io
+        href: https://github.com/volmerso/merso3
         target: _blank
       - icon: rss
         href: posts.xml
