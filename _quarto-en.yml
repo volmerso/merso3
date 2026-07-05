@@ -6,7 +6,7 @@ project:
 lang: en
 
 website:
-  site-url: "https://volmerso.github.io"
+  site-url: "https://volmerso.github.io/merso3"
   description: "Quarto Academic Website Template adapted by Dr. Gang He"
 
   navbar:
