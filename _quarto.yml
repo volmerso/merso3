@@ -1,0 +1,51 @@
+# ========= 共用設定（兩種語言都會用到）=========
+project:
+  type: website
+  pre-render:
+    - python xlsx_to_yml.py
+
+profile:
+  default: en   # 直接 quarto render 時預設用英文 profile
+
+description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
+author-meta: "Dr. Gang He"
+
+website:
+  title: "Quarto Academic"
+  image: "https://quarto.org/quarto.png"
+
+  page-navigation: true
+
+  search:
+    location: navbar
+    type: textbox
+
+  reader-mode: true
+  draft-mode: unlinked
+
+  repo-url: https://github.com/drganghe/quarto-academic-website-template
+
+  open-graph: true
+  twitter-card: true
+
+  google-analytics:
+    tracking-id: ""
+    anonymize-ip: true
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
+    include-in-header: "files/includes/_academic.qmd"

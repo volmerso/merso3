@@ -1,0 +1,53 @@
+═══════════════════════════════════════════
+  上傳步驟（照做就對了）
+═══════════════════════════════════════════
+
+【Step 0】清空 repo（避免跟舊的爛檔案混在一起）
+
+  最乾淨的做法：直接刪掉 repo 重建
+  Settings → 拉到最下面 Danger Zone → Delete this repository
+  然後重新建一個同名 repo（volmerso.github.io）
+
+  ※ 不想刪 repo 的話，至少把 repo 裡的
+    volmerso-bilingual 資料夾刪掉：
+    點進該資料夾 → 右上角「⋯」→ Delete directory
+
+
+【Step 1】全部拖上去
+
+  1. 進 repo → Add file → Upload files
+  2. 打開這個解壓後的資料夾
+  3. Ctrl+A（Mac: Cmd+A）全選裡面所有東西
+  4. 直接拖進網頁的虛線框
+  5. Commit changes
+  （檔案多，等它跑完，不要中途關網頁）
+
+
+【Step 2】把 github 資料夾改名成 .github（10 秒）
+
+  因為隱藏資料夾拖不上去，我把它做成「github」（沒有點）。
+  上傳完之後：
+
+  1. 在 repo 點進 github/workflows/publish.yml
+  2. 點右上角鉛筆 ✏️（Edit）
+  3. 最上面的檔名路徑欄，在 github 前面加一個「.」
+     變成：.github/workflows/publish.yml
+  4. Commit changes
+
+  一 Commit，GitHub Actions 就會自動開跑！
+
+
+【Step 3】確認
+
+  1. 去 Actions 標籤，看「Render Bilingual Site」在跑
+  2. 等它變綠色 ✅（大約 3-5 分鐘，會自動生成 docs/）
+  3. 去 Settings → Pages 確認：
+     Source: Deploy from a branch
+     Branch: main + /docs
+  4. 再等 1-2 分鐘，開網站：
+     https://volmerso.github.io      ← 英文版
+     https://volmerso.github.io/zh/  ← 中文版
+  5. 記得 Ctrl+Shift+R 強制刷新
+
+
+有紅色 ❌ 就把錯誤訊息貼給 Claude。

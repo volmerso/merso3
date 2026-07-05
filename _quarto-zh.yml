@@ -1,0 +1,64 @@
+# ========= 中文版 profile =========
+# 渲染指令：quarto render --profile zh
+project:
+  output-dir: docs/zh
+
+lang: zh
+
+website:
+  site-url: "https://volmerso.github.io/zh"
+  description: "個人學術網站"
+
+  navbar:
+    background: light
+
+    left:
+      - text: 關於
+        menu:
+          - text: 最新消息
+            href: posts.qmd#category=news
+          - text: 活動
+            href: posts.qmd#category=event
+          - text: 聯絡方式
+            href: contact.qmd
+      - text: 研究
+        menu:
+          - text: 著作列表
+            href: pub-listing.qmd
+          - text: 出版品
+            href: publications.qmd
+          - text: 精選論文
+            href: posts.qmd#category=paper
+          - text: 研究計畫
+            href: projects.qmd
+      - text: 教學
+        href: teaching.qmd
+      - text: 推廣
+        menu:
+          - text: 演講
+            href: posts.qmd#category=presentation
+      - text: 團隊
+        href: people.qmd
+
+    right:
+      - text: "EN"             # ← 語言切換按鈕：跳回英文版
+        href: https://volmerso.github.io/
+      - text: 履歷
+        href: files/nsf-biosketch.pdf
+      - icon: github
+        href: https://github.com/volmerso/volmerso.github.io
+        target: _blank
+      - icon: rss
+        href: posts.xml
+        target: _blank
+
+  page-footer:
+    left: "[你的名字](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: "基於 [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) 建置"
+    right:
+      - icon: github
+        href: https://github.com/volmerso/volmerso.github.io
+        target: _blank
+      - icon: rss
+        href: posts.xml
+        target: _blank

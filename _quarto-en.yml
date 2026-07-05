@@ -1,0 +1,64 @@
+# ========= 英文版 profile =========
+# 渲染指令：quarto render --profile en
+project:
+  output-dir: docs
+
+lang: en
+
+website:
+  site-url: "https://volmerso.github.io"
+  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+
+  navbar:
+    background: light
+
+    left:
+      - text: About
+        menu:
+          - text: News
+            href: posts.qmd#category=news
+          - text: Events
+            href: posts.qmd#category=event
+          - text: Contact
+            href: contact.qmd
+      - text: Research
+        menu:
+          - text: Publications Listing
+            href: pub-listing.qmd
+          - text: Publications
+            href: publications.qmd
+          - text: Selected Papers
+            href: posts.qmd#category=paper
+          - text: Grants
+            href: projects.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: Outreach
+        menu:
+          - text: Presentations
+            href: posts.qmd#category=presentation
+      - text: Group
+        href: people.qmd
+
+    right:
+      - text: "中文"           # ← 語言切換按鈕：跳到中文版
+        href: https://volmerso.github.io/zh/
+      - text: CV
+        href: files/nsf-biosketch.pdf
+      - icon: github
+        href: https://github.com/volmerso/volmerso.github.io
+        target: _blank
+      - icon: rss
+        href: posts.xml
+        target: _blank
+
+  page-footer:
+    left: "[Your Name](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)"
+    right:
+      - icon: github
+        href: https://github.com/volmerso/volmerso.github.io
+        target: _blank
+      - icon: rss
+        href: posts.xml
+        target: _blank

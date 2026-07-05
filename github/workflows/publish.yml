@@ -1,0 +1,41 @@
+name: Render Bilingual Site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: pip install openpyxl pyyaml pandas
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render English site
+        run: quarto render --profile en
+
+      - name: Render Chinese site
+        run: quarto render --profile zh
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/
+          git commit -m "Render bilingual site [skip ci]" || echo "No changes"
+          git push
